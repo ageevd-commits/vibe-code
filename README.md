@@ -46,6 +46,21 @@ SCSS has been used to increase code customizability.
 
 ## Quick start
 
+### Quick Preview (No Installation Required)
+
+You can preview AdminLTE without installing anything:
+
+**Option 1 — Open locally:**
+1. Download or clone this repository to your computer
+2. Open the project folder
+3. Double-click the `index.html` file — it will open in your browser and redirect to the dashboard
+
+**Option 2 — Browse on GitHub:**
+1. Navigate to the `dist/` folder in this repository on GitHub
+2. Open `index.html` or any other HTML file to view its source
+
+> **Note:** Some features (e.g., AJAX-loaded content) may not work when opening files directly from disk due to browser security restrictions. For full functionality, use the development server described below.
+
 ### Development
 
 To start developing with AdminLTE:
