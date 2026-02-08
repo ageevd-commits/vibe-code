@@ -217,8 +217,12 @@
   .nav-link {
     position: relative;
     width: 100%;
-    @include transition(width $lte-transition-fn $lte-transition-speed);
+    @include transition(width $lte-transition-fn $lte-transition-speed, background-color 0.3s ease, color 0.3s ease, padding-left 0.3s ease);
     @include border-radius($border-radius);
+
+    &:hover {
+      padding-left: calc(#{$nav-link-padding-x} + 4px);
+    }
 
     p {
       display: inline;

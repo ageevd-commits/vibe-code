@@ -13060,7 +13060,7 @@ textarea.form-control-lg {
 .sidebar-menu .nav-link {
   position: relative;
   width: 100%;
-  transition: width ease-in-out 0.3s;
+  transition: width ease-in-out 0.3s, background-color 0.3s ease, color 0.3s ease, padding-left 0.3s ease;
 }
 @media (prefers-reduced-motion: reduce) {
   .sidebar-menu .nav-link {
@@ -13069,6 +13069,9 @@ textarea.form-control-lg {
 }
 .sidebar-menu .nav-link {
   border-radius: 0.375rem;
+}
+.sidebar-menu .nav-link:hover {
+  padding-left: calc(1rem + 4px);
 }
 .sidebar-menu .nav-link p {
   display: inline;
@@ -14526,6 +14529,7 @@ html.maximized-card {
   position: relative;
   display: block;
   margin-bottom: 1.25rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   --bs-link-color-rgb: none;
   --bs-link-hover-color-rgb: none;
   --bs-heading-color: none;
@@ -14625,6 +14629,10 @@ html.maximized-card {
   .small-box .small-box-icon {
     transition: none;
   }
+}
+.small-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 .small-box:hover .small-box-icon {
   transform: scale(1.1);

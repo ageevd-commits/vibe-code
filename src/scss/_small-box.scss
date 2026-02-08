@@ -8,6 +8,7 @@
   position: relative;
   display: block;
   margin-bottom: 1.25rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   --bs-link-color-rgb: none;
   --bs-link-hover-color-rgb: none;
   --bs-heading-color: none;
@@ -104,6 +105,9 @@
 
   // Small box hover state
   &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba($black, .15);
+
     // Animate icons on small box hover
     .small-box-icon {
       transform: scale(1.1);
